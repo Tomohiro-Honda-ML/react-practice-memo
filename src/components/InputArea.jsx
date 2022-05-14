@@ -11,13 +11,12 @@ export const InputArea = (props) => {
 
     let appendText = inputText
 
-    if(props.memo !== ''){
+    if(props.displayMemo !== ''){
       appendText = '\n' + appendText;
     }
 
-    props.setMemo(props.memo+appendText);
+    props.setDisplayMemo(props.displayMemo+appendText);
     setInputText('');
-    
   }
 
   const hundleType = (e) => {
@@ -29,7 +28,7 @@ export const InputArea = (props) => {
         <form onSubmit={hundleSubmit}>
             <input type="text" onChange={hundleType} value={inputText}/>
             <button>
-              <FontAwesomeIcon icon={faPen} />
+              <FontAwesomeIcon icon={faPen} color="#483d8b"/>
             </button>
         </form>
     </div>

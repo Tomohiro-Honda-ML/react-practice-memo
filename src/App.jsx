@@ -1,17 +1,28 @@
 import './App.css';
+import { useState } from 'react'
 import {Title} from './components/Title';
 import {InputArea} from './components/InputArea';
 import {DisplayArea} from './components/DisplayArea';
-import { useState } from 'react'
+import {PageManage} from './components/PageManage';
 
 function App() {
-  const [memo, setMemo] = useState('');
+  const [displayMemo, setDisplayMemo] = useState("");
+  const initialMemo = {
+    id:1, 
+    text:"",
+    isActive: true
+  }
+  const [memos, setMemos] = useState([initialMemo]);
 
   return (
     <div className="App">
       <Title />
-      <InputArea memo={memo} setMemo={setMemo} />
-      <DisplayArea memo={memo}/>      
+      <InputArea displayMemo={displayMemo} setDisplayMemo={setDisplayMemo} />
+      <DisplayArea displayMemo={displayMemo}/>
+      <PageManage 
+        displayMemo={displayMemo} setDisplayMemo={setDisplayMemo} 
+        memos={memos} setMemos={setMemos} 
+      />
     </div>
   );
 }
