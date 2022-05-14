@@ -10,6 +10,7 @@
   height: 1.6rem;
   border: 0.2rem solid rgb(160, 160, 160);
   border-radius: 0.6rem;
+  font-size: 100%;
 }
 .InputArea input[type="text"]:focus {
   border: 0.3rem solid rgb(220, 100, 200);
@@ -34,6 +35,7 @@
   height: 20rem;
   border: 0.2rem solid rgb(160, 160, 160);
   border-radius: 0.6rem;
+  font-size: 1rem;
 }
 .DisplayArea textarea:focus {
   outline: 0;
