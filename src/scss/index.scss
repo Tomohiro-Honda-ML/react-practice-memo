@@ -1,4 +1,4 @@
-@import "variables";
+@use "variables" as var;
 
 body {
     margin: 0;
@@ -7,7 +7,7 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: $base-color;
+    background-color: var.$base-color;
   }
   
   code {
