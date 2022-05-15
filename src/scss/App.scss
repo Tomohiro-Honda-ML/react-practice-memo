@@ -1,0 +1,95 @@
+@import "variables";
+
+.App {
+  text-align: center;
+
+  .InputArea {
+    margin: 1rem;
+  
+    input[type="text"] {
+      width: 16rem;
+      height: 1.6rem;
+      border: 0.2rem solid rgb(160, 160, 160);
+      border-radius: 0.6rem;
+      font-size: 100%;
+      
+      &:focus {
+        border: 0.3rem solid $active-color;
+        outline: 0;
+      }
+    }
+  
+    button {
+      margin-left: 0.6rem;
+      font-size: medium;
+      width: 3.2rem;
+      height: 2.2rem;
+      background-color: $main-color;
+      border: .2rem solid rgb(96, 96, 96);
+      border-radius: 0.6rem;
+    }
+  }
+  
+  .DisplayArea {
+    margin: 1rem;
+  
+    textarea {
+      resize: none;
+      width: 20rem;
+      height: 20rem;
+      border: 0.2rem solid rgb(160, 160, 160);
+      border-radius: 0.6rem;
+      font-size: 1rem;
+      
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+  
+  .PageManage {
+    margin: 1rem;
+    
+    ul {
+      width: 20rem;
+      margin: .8rem auto;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    li {
+      list-style: none;
+      display: inline-block;
+      width: 2rem;
+      height: 2rem;
+      margin: .4rem .4rem;
+      background-color: $main-color;
+      border-radius: 50%;
+      text-align: center;
+      box-shadow: 0 .4rem .3rem -0.1rem rgba(0,0,0,0.5);
+      cursor: pointer;
+      
+      span {
+        display: inline-block;
+        margin: .4rem 0;
+        color: rgb(40, 40, 40);
+        font-weight: bold;
+      }
+    }
+      
+    .add-page {
+      cursor: pointer;
+    }
+  
+    .active {
+      background-color: $active-color;
+  
+      span {
+        color: #fff;
+      }
+    }    
+  }
+
+}
+

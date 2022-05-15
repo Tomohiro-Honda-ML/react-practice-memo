@@ -1,4 +1,4 @@
-import './App.css';
+import './scss/App.scss';
 import { useState } from 'react'
 import {Title} from './components/Title';
 import {InputArea} from './components/InputArea';
